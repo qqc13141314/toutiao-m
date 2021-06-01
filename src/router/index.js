@@ -16,7 +16,7 @@ const routes = [
     //主页
     {
         path: '/',
-        name: 'layout',
+
         component: layoutIndex,
         children: [{
                 path: '', //默认子路由
@@ -35,8 +35,8 @@ const routes = [
                 component: () =>
                     import ('@/views/my/')
             }, {
-                path: '/videos', //视频
-                name: '/videos',
+                path: '/video', //视频
+                name: 'videos',
                 component: () =>
                     import ('@/views/video/')
             }

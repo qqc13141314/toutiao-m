@@ -107,6 +107,8 @@ methods: {
         Toast.success('登录成功')
         //将后端返回的用户登录状态（tooken等数据）放到vuex中
         this.$store.commit('setUser',res.data.data)
+        //跳转回原来页面
+        this.$router.back()
        }catch(err){
            console.log(err);
            console.log('登录失败',err);

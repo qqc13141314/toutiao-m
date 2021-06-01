@@ -1,7 +1,7 @@
 <!--  -->
 <template>
 <div class='video-container'>
-  video
+  videos
 </div>
 </template>
 
